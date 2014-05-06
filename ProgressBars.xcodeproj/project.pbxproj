@@ -21,6 +21,7 @@
 		84C7F0E91913801F00813B08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C7F0D11913801F00813B08 /* UIKit.framework */; };
 		84C7F0F11913801F00813B08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C7F0EF1913801F00813B08 /* InfoPlist.strings */; };
 		84C7F0F31913801F00813B08 /* ProgressBarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7F0F21913801F00813B08 /* ProgressBarsTests.m */; };
+		84F9C3471917DCDC00805C74 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F9C3461917DCDC00805C74 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		84C7F0EE1913801F00813B08 /* ProgressBarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressBarsTests-Info.plist"; sourceTree = "<group>"; };
 		84C7F0F01913801F00813B08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C7F0F21913801F00813B08 /* ProgressBarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarsTests.m; sourceTree = "<group>"; };
+		84F9C3461917DCDC00805C74 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F9C3471917DCDC00805C74 /* CoreText.framework in Frameworks */,
 				84C7F0D01913801F00813B08 /* CoreGraphics.framework in Frameworks */,
 				84C7F0D21913801F00813B08 /* UIKit.framework in Frameworks */,
 				84C7F0CE1913801F00813B08 /* Foundation.framework in Frameworks */,
@@ -102,6 +105,7 @@
 		84C7F0CC1913801F00813B08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84F9C3461917DCDC00805C74 /* CoreText.framework */,
 				84C7F0CD1913801F00813B08 /* Foundation.framework */,
 				84C7F0CF1913801F00813B08 /* CoreGraphics.framework */,
 				84C7F0D11913801F00813B08 /* UIKit.framework */,

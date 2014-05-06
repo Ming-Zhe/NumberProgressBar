@@ -24,16 +24,12 @@ static const CGSize progressViewSize = { 300.0f, 10.0f };
 
 - (void)viewDidLoad
 {
-//    [super viewDidLoad];
     UIView *div = [[UIView alloc] initWithFrame:CGRectMake(0, 100,CGRectGetWidth(self.view.bounds), CGRectGetMidY(self.view.bounds))];
     div.backgroundColor = [UIColor whiteColor];
     
-    PBView *progressView = [[PBView alloc] initWithFrame:CGRectMake(CGRectGetMidX(div.frame) - progressViewSize.width / 2.0f,
-                                                                                       CGRectGetMidY(div.frame) - progressViewSize.height / 2.0f,
-                                                                                       progressViewSize.width,
-                                                                                       progressViewSize.height)];
+    PBView *progressView = [[PBView alloc] initWithFrame:CGRectMake(CGRectGetMidX(div.frame) - progressViewSize.width / 2.0f, CGRectGetMidY(div.frame) - progressViewSize.height / 2.0f, progressViewSize.width, progressViewSize.height)]; //set size
     
-    progressView.progressColor = [UIColor redColor];
+    progressView.progressColor = [UIColor redColor]; // set color
     [div addSubview:progressView];
     [self.view addSubview:div];
     
@@ -42,7 +38,7 @@ static const CGSize progressViewSize = { 300.0f, 10.0f };
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateProgress) userInfo:nil repeats:YES];
 }
 
-
+// progress interface for your own logic
 - (void)updateProgress
 {
     self.progress += 0.020f;
@@ -62,7 +58,6 @@ static const CGSize progressViewSize = { 300.0f, 10.0f };
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

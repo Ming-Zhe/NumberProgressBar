@@ -7,7 +7,6 @@
 //
 
 #import "PBView.h"
-#import <QuartzCore/QuartzCore.h>
 
 
 @interface PBViewLayer : CALayer
@@ -64,7 +63,7 @@
     CGContextSelectFont(context, "HelveticaNeue-UltraLight", 10.0, kCGEncodingMacRoman);
     CGAffineTransform transform = CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0);
     CGContextSetTextMatrix(context, transform);
-    CGContextShowTextAtPoint(context, MIN(textRect.origin.x + current + 5.0, maxWidth - textWidth + 8.0), textRect.origin.y + (CGRectGetHeight(textRect)-1), c_text, strlen(c_text));
+    CGContextShowTextAtPoint(context, MIN(textRect.origin.x + current + 5.0, maxWidth - textWidth + 8.0), textRect.origin.y + (CGRectGetHeight(textRect) - 1), c_text, strlen(c_text));
     
 }
 
